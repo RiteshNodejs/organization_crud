@@ -31,7 +31,7 @@
 * 3.response helper.js - for pre defined structure for response 
 * 4.validation helper.js- for joi validation structure for input validation 
 ### CRUD API links & Working 
-* #### Register user  post:(localhost:3200/register)
+* #### Register user  post:(localhost:3200/user/register)
   * firstName:required,
   * lastName:required,
   * userName:required, uerName is unique 
