@@ -5,7 +5,7 @@ class AuthValidaton{
     Validattion(req, res, next)
     { 
         const header = req.headers.authorization;
-        const token = header.replace("Bearer ", "")
+        const token = header.replace("Bearer ","")
         try {
             const decoded = jwt.verify(token, "mykey")
           

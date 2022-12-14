@@ -29,11 +29,7 @@ const userSchema = new Schema({
     type:String,
     required:true,
   },
-  updatePassword:{
-    type:Boolean,
-    default:false
-  }
-  // organizations:{organizationSchema}
+
 
 }, { timestamps: true });
 

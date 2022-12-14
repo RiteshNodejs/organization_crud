@@ -4,6 +4,7 @@ import { Schema } from "mongoose";
 import { addressSchema } from "./address";
 
 import { nanoid } from "nanoid";
+import { boolean } from "joi";
 
 const organizationSchema = new Schema({
   _id: {
@@ -46,7 +47,11 @@ const organizationSchema = new Schema({
 
   },
 
-  userId: { type: String, required: true }
+  userId: { type: String, required: true },
+  isActive:{
+    type:Boolean,
+    default:false,
+  }
 })
 
 let organization = mongoose.model("organization", organizationSchema);

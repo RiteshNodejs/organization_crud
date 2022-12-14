@@ -7,7 +7,7 @@ class ValidationHelper {
                 obj = {
     
                     '/getalluser': userSchema,
-                    '/getorg': userSchemaLogin
+                    '/user/get': userSchemaLogin
                 }
                 return obj[route];
                 break;
@@ -15,14 +15,14 @@ class ValidationHelper {
                 obj = {
                     '/user/register': userSchema,
                     '/user/login': userSchemaLogin,
-                    '/organization/add':orgSchema
+                    '/org/add':orgSchema
                 }
                 return obj[route]
                 break;
             case 'put':
                 obj = {
                     '/user/updateuser':updateuserSchema,
-                    '/org:id':updateOrgschema
+                  
                 }
                 return obj[route]
                 break;
@@ -58,7 +58,7 @@ const updateuserSchema =joi.object({
     userName:joi.string().required().min(1).max(20).required(),
     email: joi.string().email().min(2).max(50).trim(true).optional(),
     password: joi.string().min(5).max(25).trim(true).optional(),
-    updatePasword:joi.string().optional()
+    updatePassword:joi.boolean().optional()
 
 });
 const userSchemaLogin = joi.object({

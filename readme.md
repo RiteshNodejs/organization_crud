@@ -31,7 +31,7 @@
 * 3.response helper.js - for pre defined structure for response 
 * 4.validation helper.js- for joi validation structure for input validation 
 ### CRUD API links & Working 
-* #### Register user  post:(localhost:3200/register)
+* #### Register user  post:(localhost:3200/user/register)
   * firstName:required,
   * lastName:required,
   * userName:required, uerName is unique 
@@ -47,11 +47,11 @@
   * state:required,
   * country:required,
   * zipCode:required,
-* #### Login user  post: (localhost:3200/login)
+* #### Login user  post: (localhost:3200/user/login)
   * userName:required,
   * password:required,
   * then token is generated ( Token Expiry time : 15 minute)
-* #### Profile  get :(localhost:3200/getorg)
+* #### Profile  get :(localhost:3200/user/getone)
   * add token in  Auth/Bearer 
   * In Response it Shows user  details with organization list 
 * #### Update user   put:(localhost:3200/user/updateuser) 
@@ -68,7 +68,7 @@
   * state:required,
   * country:required,
   * zipCode:required,
-* #### update organization by id put:(localhost:3200/org/:id)
+* #### update organization by id put:(localhost:3200/org/getbyid/:id)
   * token required and id of organization object  
   * orgName: required,
   * address is optional 
@@ -80,7 +80,7 @@
   * state:required,
   * country:required,
   * zipCode:required,
-* #### list of all Organization with their userName  get:(localhost:3200/allorg)
+* #### list of all Organization with their userName  get:(localhost:3200/org/getall)
 
 
 

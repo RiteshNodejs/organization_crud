@@ -9,7 +9,7 @@
     UPDATED_ERROR:"Invalid Credentials while update",
     REGISTER_SUCCESS:"Successfully register",
     REGISTER_ERROR:"Somthing went wrong invalid details ",
-    EMAIL_EXIST:"Email already exist",
+    USER_EXIST:"User already exist",
     VALIDATION_ERROR:"validation error",
     DELETE_SUCCESS:"Successfully deleted ",
     USER_NOT_FOUND:"User not found",
